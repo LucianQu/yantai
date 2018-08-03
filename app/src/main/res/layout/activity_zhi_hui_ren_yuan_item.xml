@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#FFFFFF">
+
+        <com.jsmy.pingshan.view.CircleImageView
+            android:id="@+id/img_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/iconfont_tongxunlutouxiang"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_toRightOf="@+id/img_head"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="贾宏浩"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_toRightOf="@+id/tv_name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13884194866"/>
+
+        <TextView
+            android:id="@+id/tv_zhi"
+            android:layout_toRightOf="@+id/img_head"
+            android:layout_alignBottom="@+id/img_head"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="书记"/>
+
+        <TextView
+            android:id="@+id/tv_dan"
+            android:layout_toRightOf="@+id/tv_zhi"
+            android:layout_alignBottom="@+id/img_head"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城关镇指挥部"/>
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/diahua"/>
+
+        <ImageView
+            android:id="@+id/img_sms"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/img_phone"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/iconfont_xinxi"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#F1F1F1" />
+
+</LinearLayout>

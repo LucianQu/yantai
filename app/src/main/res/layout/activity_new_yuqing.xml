@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".new_moudle.NewYuqingActivity">
+    <LinearLayout
+        android:background="@color/themeColor"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_back"
+            android:text="返回"
+            style="@style/yuqing_button" />
+        <Button
+            android:id="@+id/bt_cezhan"
+            android:text="测站统计"
+            style="@style/yuqing_button" />
+        <Button
+            android:id="@+id/bt_time_select"
+            android:text="时间选择"
+            style="@style/yuqing_button" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/gray"
+        android:gravity="center"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            tools:text="开始时间：2018"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            tools:text="结束时间：2018"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="名称"
+            style="@style/yuqing_table_name"
+            android:layout_marginLeft="0dp"/>
+        <TextView
+            android:text="本次降雨"
+            style="@style/yuqing_table_name" />
+        <TextView
+            android:text="年度雨量"
+            style="@style/yuqing_table_name" />
+        <TextView
+            android:text="去年同期"
+            style="@style/yuqing_table_name" />
+        <TextView
+            android:text="历年同期"
+            style="@style/yuqing_table_name" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyc_reciv"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_1dady"
+                android:text="今日"
+                style="@style/yuqing_bottom_name"/>
+            <TextView
+                android:id="@+id/tv_3day"
+                android:text="三日"
+                style="@style/yuqing_bottom_name"/>
+            <TextView
+                android:id="@+id/tv_7day"
+                android:text="七日"
+                style="@style/yuqing_bottom_name"/>
+            <TextView
+                android:id="@+id/tv_30day"
+                android:text="一个月"
+                style="@style/yuqing_bottom_name"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

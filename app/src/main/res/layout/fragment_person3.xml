@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rela_creat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@drawable/recycler_bg">
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/shanghui_tianjia"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_add"
+            android:layout_marginLeft="10dp"
+            android:text="创建讨论组"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#F1F1F1"/>
+
+    <cn.lemon.view.RefreshRecyclerView
+        android:id="@+id/my_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:refresh_enable="false"
+        app:load_more_enable="false">
+
+    </cn.lemon.view.RefreshRecyclerView>
+
+</LinearLayout>

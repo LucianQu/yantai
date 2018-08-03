@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/iconfont_tongxunlutouxiang" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_head"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLength="5"
+        android:maxLines="1"
+        android:text="邀请" />
+
+    <ImageView
+        android:id="@+id/img_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/duanxinqunfa_shanchu"
+        android:layout_alignRight="@+id/img_head" />
+
+</RelativeLayout>

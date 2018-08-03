@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#429EFA"
+        android:gravity="center"
+        android:text="工作台"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/tv_yuqing"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/recycler_bg"
+                        android:drawableTop="@mipmap/gongzuotai_yuqing"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:text="雨情"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D5D5D5">
+
+                    </View>
+
+                    <TextView
+                        android:id="@+id/tv_shuiqing"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/recycler_bg"
+                        android:drawableTop="@mipmap/gongzuotai_shuiqing"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:text="水情"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D5D5D5">
+
+                    </View>
+
+                    <TextView
+
+                        android:id="@+id/tv_yidongxuncha"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/recycler_bg"
+                        android:drawableTop="@mipmap/gongzuotai_yidongxuncha"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:text="移动巡查"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D5D5D5">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_dingwei"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/recycler_bg"
+                        android:drawableTop="@mipmap/gongzuotai_dingweitongji"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:text="定位"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D5D5D5">
+
+                    </View>
+
+                    <TextView
+                        android:id="@+id/tv_qixiang"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/recycler_bg"
+                        android:drawableTop="@mipmap/gongzuotai_qixiangxinxi"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:text="气象信息"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D5D5D5">
+
+                    </View>
+
+                    <TextView
+                        android:id="@+id/tv_yuanguanli"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/recycler_bg"
+                        android:drawableTop="@mipmap/gongzuotai_yuanguanli"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:text="预案管理"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D5D5D5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_yidongbangong"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/recycler_bg"
+                        android:drawableTop="@mipmap/gongzuotai_yidongbangong"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:text="移动办公"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D5D5D5">
+                    </View>
+                    <TextView
+                        android:id="@+id/tv_shipingjiankong"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/recycler_bg"
+                        android:drawableTop="@mipmap/gongzuotai_shipinjiankong"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:text="视频监控"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D5D5D5">
+                    </View>
+                    <TextView
+
+                        android:id="@+id/tv_shipinghuishang"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/recycler_bg"
+                        android:drawableTop="@mipmap/gongzuotai_shipinhuishang"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:text="视频会商"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D5D5D5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_tongxunlu"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/recycler_bg"
+                        android:drawableTop="@mipmap/tongxunlu1"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:text="巡查命令"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D5D5D5">
+                    </View>
+                    <TextView
+                        android:id="@+id/v1"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/recycler_bg"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D5D5D5">
+
+                    </View>
+
+                    <TextView
+
+                        android:id="@+id/v2"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/recycler_bg"
+                        android:gravity="center"
+                        android:paddingTop="15dp"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D5D5D5" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/gongzuotai_tupian"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

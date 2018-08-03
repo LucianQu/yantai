@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+
+android {
+//    signingConfigs {
+//        config {
+//            keyAlias '123456'
+//            keyPassword '123456'
+//            storeFile file('C:/Users/Administrator/Desktop/Android-weicd/pingshan/pingshan.jks')
+//            storePassword '123456'
+//            v1SigningEnabled true
+//            v2SigningEnabled false
+//        }
+//    }
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.jsmy.pingshan"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+//            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            abiFilters "armeabi-v7a", "x86"
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "8b767d12f9a25627ace6d315", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+        multiDexEnabled true
+        javaCompileOptions
+                { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            signingConfig signingConfigs.config
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        debug {
+//            debuggable true
+//            signingConfig signingConfigs.config
+//        }
+//    }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    testCompile 'junit:junit:4.12'
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    //butterknife
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //permissionsdispatcher
+    compile 'com.github.hotchemi:permissionsdispatcher:3.0.1'
+    provided 'com.github.hotchemi:permissionsdispatcher-processor:3.0.1'
+    //baidumap
+    compile files('libs/BaiduLBS_Android.jar')
+    //刷新列表
+    compile 'cn.lemon:RefreshRecyclerView:1.4.0'
+//    compile 'com.android.support:recyclerview-v7:25.4.0'
+    //图片加载
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //图片选择框架
+    compile project(':mediapicker')
+    //hellocharts图表库
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    //融云
+    compile project(':IMKit')
+    compile project(':CallKit')
+    //方法数超限制
+    compile 'com.android.support:multidex:1.0.1'
+    //友盟统计
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    //极光
+    compile 'cn.jiguang.sdk:jpush:3.0.9'
+    compile 'cn.jiguang.sdk:jcore:1.1.7'
+    compile 'cn.jiguang.sdk:jmessage:2.4.1'
+    //图片预览
+    compile 'liji.library.dev:imagezoom:1.2.2'
+    //视频播放
+    compile 'com.linsea:universalvideoview:1.1.0@aar'
+    compile project(path: ':SimpleDemo')
+    compile 'com.contrarywind:Android-PickerView:3.2.7'
+}

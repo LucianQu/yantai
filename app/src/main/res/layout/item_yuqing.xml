@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_name"
+        tools:text="木桥水库"
+        android:background="@color/gray2"
+        android:minLines="2"
+        style="@style/yuqing_table_name"
+        android:layout_height="match_parent"
+        android:textSize="13sp"
+        android:padding="0dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_marginLeft="0dp"/>
+    <TextView
+        android:id="@+id/tv_benci"
+        style="@style/yuqing_table_name2"
+      />
+    <TextView
+        android:id="@+id/tv_niandu"
+        style="@style/yuqing_table_name2" />
+    <TextView
+        android:id="@+id/tv_qunian"
+        style="@style/yuqing_table_name2" />
+    <TextView
+        android:id="@+id/tv_nianli"
+        style="@style/yuqing_table_name2" />
+
+</LinearLayout>
